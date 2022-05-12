@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         $videos.visibilityState === "visible"
           ? entry.target.play()
           : entry.target.pause();
-        console.log(document.visibilityState);
+        // console.log(document.visibilityState);
       });
     });
   };
