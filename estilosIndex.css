@@ -1,28 +1,45 @@
 /* GENERAL STYLES */
 
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --letter-font: monospace;
+}
+
+html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* padding: 0; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 #tituloindex {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
   background-color: yellow;
   color: black;
-  font-family: monospace;
+  font-family: var(--letter-font);
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
-  display: flex;
-  position: sticky;
-  justify-content: center;
-  padding: 10px;
-  top: 0;
-  z-index: 100;
 }
 
 h2 {
-  font-family: monospace;
+  font-family: var(--letter-font);
   font-weight: bold;
   font-size: 2rem;
   padding: 16px;
@@ -30,8 +47,14 @@ h2 {
 }
 
 section {
-  margin-top: 100px;
-  height: 120vh;
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  text-align: center;
 }
 
 /* MODAL STYLES */
@@ -454,7 +477,7 @@ ol.lista {
 
 #section13 h3 {
   text-align: center;
-  font-family: monospace;
+  font-family: var(--letter-font);
   font-size: 20px;
 }
 
@@ -473,7 +496,7 @@ ol.lista {
   display: block;
   width: 100%;
   padding: 0.5rem;
-  font-family: monospace;
+  font-family: var(--letter-font);
 }
 
 .textarea {
@@ -536,7 +559,7 @@ ol.lista {
   width: 40%;
   padding: 0.5rem;
   background-color: rgb(199, 199, 199);
-  font-family: monospace;
+  font-family: var(--letter-font);
   font-weight: bold;
 }
 
