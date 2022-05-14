@@ -1,5 +1,7 @@
-import menuHamb from "./dom/menuHamb.js";
+import menu from "./dom/menu.js";
+import flecha from "./dom/flecha.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  menuHamb(".btnHamb", ".modal-window", ".modal-content a");
+  menu(".btnHamb", ".modal-window", ".modal-content a");
+  flecha(".flecha");
 });

@@ -1,7 +1,5 @@
-export default function menuHamb($btn, $panel, $menu) {
-  // Menu
-  const d = document;
-
+const d = document;
+export default function menu($btn, $panel, $menu) {
   d.addEventListener("click", (e) => {
     if (e.target.matches($btn)) {
       d.querySelector($panel).classList.toggle("activado");
@@ -13,28 +11,6 @@ export default function menuHamb($btn, $panel, $menu) {
     }
   });
 }
-
-// // Flecha
-
-// const $flecha = document.querySelector(".flecha");
-// const $body = document.querySelector("body");
-
-// document.addEventListener(
-//   "scroll",
-//   () => {
-//     let limite = $body.getBoundingClientRect();
-//     if (limite.y < -200) {
-//       $flecha.classList.remove("hidden");
-//     } else {
-//       $flecha.classList.add("hidden");
-//     }
-//   },
-//   false
-// );
-
-// $flecha.addEventListener("click", () => {
-//   window.scrollTo(0, 0);
-// });
 
 // // Tema Oscuro y Tema Claro
 
