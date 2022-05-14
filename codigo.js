@@ -1,4 +1,4 @@
-import menuHamb from "./Menu, Flecha y Temas/menuHamb.js";
+import menuHamb from "./dom/menuHamb.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menuHamb(".btnHamb", ".modal-window", ".modal-content a");
