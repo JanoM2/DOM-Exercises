@@ -5,6 +5,7 @@ import reloj from "./dom/reloj.js";
 import alarma from "./dom/alarma.js";
 import cuentaAtras from "./dom/cuentaRegresiva.js";
 import diseñoAdaptable from "./dom/ResponsiveDesign.js";
+import responviseTester from "./ResponsiveTester/ResponsiveTester.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -14,4 +15,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   alarma(".alarma1", ".alarma2", "assets/sonido-de-sirena.mp3");
   cuentaAtras(".countDown");
   diseñoAdaptable("#video", "#map");
+  responviseTester();
 });
