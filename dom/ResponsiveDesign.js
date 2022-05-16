@@ -24,6 +24,7 @@ export default function diseñoAdaptable(video, map) {
   </a>`;
     }
   };
+
   mqMax600.addListener(validar);
   validar(mqMax600);
 }
