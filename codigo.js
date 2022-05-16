@@ -6,6 +6,7 @@ import alarma from "./dom/alarma.js";
 import cuentaAtras from "./dom/cuentaRegresiva.js";
 import diseñoAdaptable from "./dom/ResponsiveDesign.js";
 import responviseTester from "./dom/ResponsiveTester.js";
+import detectorDeDispositivos from "./dom/detectorDeDispositivos.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   cuentaAtras(".countDown");
   diseñoAdaptable("#video", "#map");
   responviseTester("#form-tester", "#url", "#width", "#height", ".cerrar");
+  detectorDeDispositivos(".dispositivo");
 });
