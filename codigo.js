@@ -5,7 +5,7 @@ import reloj from "./dom/reloj.js";
 import alarma from "./dom/alarma.js";
 import cuentaAtras from "./dom/cuentaRegresiva.js";
 import diseñoAdaptable from "./dom/ResponsiveDesign.js";
-import responviseTester from "./ResponsiveTester/ResponsiveTester.js";
+import responviseTester from "./dom/ResponsiveTester.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");

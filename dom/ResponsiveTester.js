@@ -21,8 +21,6 @@ export default function responviseTester(
       `innerWidth=${$width.value}, innerHeight=${$height.value}`
     );
 
-    console.log($url, $width, $height);
-
     d.addEventListener("click", (e) => {
       if (e.target.matches(btnClose)) {
         // e.preventDefault();
