@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   reloj(".reloj1", ".reloj2", "#reloj");
   alarma(".alarma1", ".alarma2", "assets/sonido-de-sirena.mp3");
   cuentaAtras(".countDown");
-  diseñoAdaptable();
+  diseñoAdaptable("#video", "#map");
 });
