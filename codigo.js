@@ -15,5 +15,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   alarma(".alarma1", ".alarma2", "assets/sonido-de-sirena.mp3");
   cuentaAtras(".countDown");
   diseñoAdaptable("#video", "#map");
-  responviseTester();
+  responviseTester("#form-tester", "#url", "#width", "#height", ".cerrar");
 });
