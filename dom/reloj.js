@@ -1,7 +1,7 @@
 const d = document;
 
 export default function reloj(btnPlay, btnStop, div) {
-  let $div = document.querySelector(div);
+  let $div = d.querySelector(div);
 
   d.addEventListener("click", (e) => {
     if (e.target.matches(btnPlay)) {
