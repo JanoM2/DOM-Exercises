@@ -10,6 +10,7 @@ import detectorDeDispositivos from "./dom/detectorDeDispositivos.js";
 import detectarConeccion from "./dom/detectorDeConeccion.js";
 import detectorDeCamara from "./dom/camDetector.js";
 import geolocalizacion from "./dom/geolocalizacion.js";
+import sorteo from "./dom/sorteoDigital.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -24,4 +25,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   detectarConeccion(".connection");
   detectorDeCamara("#cam");
   geolocalizacion("#geolocalizacion");
+  sorteo(".sorteo");
 });
