@@ -8,6 +8,7 @@ import diseñoAdaptable from "./dom/ResponsiveDesign.js";
 import responviseTester from "./dom/ResponsiveTester.js";
 import detectorDeDispositivos from "./dom/detectorDeDispositivos.js";
 import detectarConeccion from "./dom/detectorDeConeccion.js";
+import detectorDeCamara from "./dom/camDetector.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -20,4 +21,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   responviseTester("#form-tester", "#url", "#width", "#height", ".cerrar");
   detectorDeDispositivos(".dispositivo");
   detectarConeccion(".connection");
+  detectorDeCamara("#cam");
 });
