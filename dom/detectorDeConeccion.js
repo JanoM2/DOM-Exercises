@@ -4,7 +4,7 @@ const w = window;
 export default function detectarConeccion(div) {
   const online = () => {
     d.querySelector(div).innerHTML = `
-    <p class="green">Coneccion Reestablecida</p>
+    <div class="connection green">Coneccion Reestablecida</div>
     `;
     setTimeout(function () {
       let connect = d.querySelector(".green");
@@ -14,7 +14,7 @@ export default function detectarConeccion(div) {
 
   const offline = () => {
     d.querySelector(div).innerHTML = `
-          <p class="red">Coneccion Perdida</p>
+    <div class="connection red">Coneccion Perdida</div>
           `;
     setTimeout(function () {
       let disconnect = d.querySelector(".red");
