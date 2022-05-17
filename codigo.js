@@ -9,6 +9,7 @@ import responviseTester from "./dom/ResponsiveTester.js";
 import detectorDeDispositivos from "./dom/detectorDeDispositivos.js";
 import detectarConeccion from "./dom/detectorDeConeccion.js";
 import detectorDeCamara from "./dom/camDetector.js";
+import geolocalizacion from "./dom/geolocalizacion.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -22,4 +23,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   detectorDeDispositivos(".dispositivo");
   detectarConeccion(".connection");
   detectorDeCamara("#cam");
+  geolocalizacion("#geolocalizacion");
 });
