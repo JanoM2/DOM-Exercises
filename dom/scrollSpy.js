@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const $section = document.querySelectorAll("section");
+const d = document;
+
+export default function scrollSpy(section) {
+  const $section = d.querySelectorAll(section);
   const call = (entries) => {
     entries.forEach((entry) => {
       const id = entry.target.getAttribute("id");
       if (entry.isIntersecting) {
-        document.querySelector(`a[href="#${id}"]`).classList.add("active");
+        d.querySelector(`a[href="#${id}"]`).classList.add("active");
       } else {
-        document.querySelector(`a[href="#${id}"]`).classList.remove("active");
+        d.querySelector(`a[href="#${id}"]`).classList.remove("active");
       }
     });
   };
@@ -18,4 +20,4 @@ document.addEventListener("DOMContentLoaded", () => {
   $section.forEach((el) => {
     observer.observe(el);
   });
-});
+}

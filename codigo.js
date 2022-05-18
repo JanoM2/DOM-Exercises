@@ -11,6 +11,7 @@ import detectarConeccion from "./dom/detectorDeConeccion.js";
 import detectorDeCamara from "./dom/camDetector.js";
 import geolocalizacion from "./dom/geolocalizacion.js";
 import sorteo from "./dom/sorteoDigital.js";
+import scrollSpy from "./dom/scrollSpy.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -26,4 +27,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   detectorDeCamara("#cam");
   geolocalizacion("#geolocalizacion");
   sorteo(".sorteo");
+  scrollSpy("section");
 });
