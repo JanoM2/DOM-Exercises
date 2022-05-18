@@ -327,11 +327,14 @@ figcaption {
 /* Digital Giveaway Styles */
 
 .div-container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ol.lista {
-  list-style-type: circle;
+  list-style-type: disc;
 }
 
 .sorteo {
