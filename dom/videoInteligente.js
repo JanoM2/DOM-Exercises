@@ -14,7 +14,6 @@ export default function videoInteligente(videos, video2) {
         $videos.visibilityState === "visible"
           ? entry.target.play()
           : entry.target.pause();
-        // console.log(document.visibilityState);
       });
     });
   };

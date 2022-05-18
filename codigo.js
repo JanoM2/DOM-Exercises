@@ -14,6 +14,7 @@ import sorteo from "./dom/sorteoDigital.js";
 import scrollSpy from "./dom/scrollSpy.js";
 import voiceReader from "./dom/lectordevoz.js";
 import videoInteligente from "./dom/videoInteligente.js";
+import formulario from "./dom/formularioContacto.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -32,4 +33,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
   scrollSpy("section");
   voiceReader("#selectVoice", "#textAreaVoice", ".btnVoice");
   videoInteligente("video[data-smart-video]", "#videoInteligente2");
+  formulario(
+    ".contact-form",
+    ".contact-form [data-form]",
+    ".contact-form-response",
+    ".lds-ring"
+  );
 });
