@@ -12,6 +12,7 @@ import detectorDeCamara from "./dom/camDetector.js";
 import geolocalizacion from "./dom/geolocalizacion.js";
 import sorteo from "./dom/sorteoDigital.js";
 import scrollSpy from "./dom/scrollSpy.js";
+import voiceReader from "./dom/lectordevoz.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -28,4 +29,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   geolocalizacion("#geolocalizacion");
   sorteo(".sorteo");
   scrollSpy("section");
+  voiceReader("#selectVoice", "#textAreaVoice", ".btnVoice");
 });
