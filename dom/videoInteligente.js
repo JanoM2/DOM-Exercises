@@ -1,5 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const $videos = document.querySelectorAll("video[data-smart-video]");
+const d = document;
+
+export default function videoInteligente(videos, video2) {
+  const $videos = d.querySelectorAll(videos);
 
   const cl = (entries) => {
     entries.forEach((entry) => {
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $videos.forEach((el) => obv.observe(el));
 
-  const $videoInt2 = document.querySelector("#videoInteligente2");
+  const $videoInt2 = d.querySelector(video2);
 
   $videoInt2.addEventListener("mouseover", () => {
     $videoInt2.play();
@@ -32,4 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
       $videoInt2.style.transition = "0.5s";
     });
   });
-});
+}

@@ -461,17 +461,24 @@ ol.lista {
   }
 }
 
-/* Intelligent Video Styles */
+/* Smart Video Styles */
+
+#section12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 #videoInteligente1,
 #videoInteligente2 {
   display: block;
   margin: 10px 10px 50px 10px;
-  width: 600px;
+  width: 500px;
 }
 
 #videoInteligente2:hover {
-  width: 650px;
+  width: 600px;
   transition: 0.5s;
   box-shadow: 10px 10px 10px rgb(59, 59, 59);
 }
