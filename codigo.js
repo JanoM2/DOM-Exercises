@@ -15,6 +15,7 @@ import scrollSpy from "./dom/scrollSpy.js";
 import voiceReader from "./dom/lectordevoz.js";
 import videoInteligente from "./dom/videoInteligente.js";
 import formulario from "./dom/formularioContacto.js";
+import canvas from "./dom/EventosYAtajosTeclado.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -40,3 +41,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
     ".lds-ring"
   );
 });
+
+canvas("escenario");
