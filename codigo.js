@@ -16,6 +16,7 @@ import voiceReader from "./dom/lectordevoz.js";
 import videoInteligente from "./dom/videoInteligente.js";
 import formulario from "./dom/formularioContacto.js";
 import canvas from "./dom/EventosYAtajosTeclado.js";
+import searchFilter from "./dom/filtrodebusqueda.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     ".contact-form-response",
     ".lds-ring"
   );
+  searchFilter(".busqueda", ".figure");
 });
 
 canvas("escenario");
