@@ -312,6 +312,7 @@ input {
   border-radius: 20%;
   opacity: 1;
   border: 1px solid yellow;
+  transition: 0.7s;
 }
 
 .figure img {
@@ -322,6 +323,13 @@ input {
 figcaption {
   font-size: 2rem;
   margin: 10px;
+}
+
+.figure.hidden {
+  visibility: 0;
+  opacity: 0;
+  transition: 0.7s;
+  order: 1;
 }
 
 /* Digital Giveaway Styles */

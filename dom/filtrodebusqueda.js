@@ -8,8 +8,8 @@ export default function searchFilter(input, figure) {
 
     $figure.forEach((el) =>
       el.textContent.toLowerCase().includes(e.target.value)
-        ? (el.style.display = "")
-        : (el.style.display = "none")
+        ? el.classList.remove("hidden")
+        : el.classList.add("hidden")
     );
   });
 }
