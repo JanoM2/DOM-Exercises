@@ -47,6 +47,13 @@ h2 {
   text-align: center;
 }
 
+p {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
 section {
   padding: 2rem;
   padding-top: 4rem;
@@ -186,12 +193,6 @@ audio {
   background-color: yellow;
 }
 
-#section2 p {
-  margin-top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
 /* COUNTDOWN STYLES */
 
 #section3 > h3 {
@@ -208,7 +209,7 @@ audio {
   margin: 1rem;
 }
 
-/* MAP AND VIDEO STYLES */
+/* Responsive Design Styles  */
 
 #video {
   display: flex;
@@ -224,7 +225,7 @@ audio {
   align-items: center;
 }
 
-/* Responsive Tester */
+/* Responsive Tester Styles*/
 
 form {
   display: block;
@@ -465,7 +466,7 @@ ol.lista {
     background-color: yellow;
     transition: 0.5s;
   }
-
+  /*  */
   .hamburger {
     display: none !important;
   }
@@ -607,4 +608,20 @@ ol.lista {
 
 #textAreaVoice {
   resize: none;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 30vh;
+}
+
+footer > a {
+  background-color: yellow;
+  color: black;
+  font-family: var(--letter-font);
 }
