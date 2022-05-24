@@ -17,6 +17,7 @@ import videoInteligente from "./dom/videoInteligente.js";
 import formulario from "./dom/formularioContacto.js";
 import canvas from "./dom/EventosYAtajosTeclado.js";
 import searchFilter from "./dom/filtrodebusqueda.js";
+import atajosDelTeclado from "./dom/atajosDelTeclado.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   temas(".theme", "[data-dark]");
   reloj(".reloj1", ".reloj2", "#reloj");
   alarma(".alarma1", ".alarma2", "assets/sonido-de-sirena.mp3");
+  atajosDelTeclado();
   cuentaAtras(".countDown");
   diseñoAdaptable("#video", "#map");
   responviseTester("#form-tester", "#url", "#width", "#height", ".cerrar");
