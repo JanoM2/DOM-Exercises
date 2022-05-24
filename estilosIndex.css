@@ -489,12 +489,13 @@ ol.lista {
 #videoInteligente1,
 #videoInteligente2 {
   display: block;
-  margin: 10px 10px 50px 10px;
-  width: 500px;
+  /* margin: 10px 10px 50px 10px; */
+  width: 400px;
+  height: 300px;
 }
 
 #videoInteligente2:hover {
-  width: 600px;
+  width: 500px;
   transition: 0.5s;
   box-shadow: 10px 10px 10px rgb(59, 59, 59);
 }
