@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   sorteo(".sorteo");
   scrollSpy("section");
   voiceReader("#selectVoice", "#textAreaVoice", ".btnVoice");
-  videoInteligente("video[data-smart-video]", "#videoInteligente2");
+  videoInteligente("#videoInteligente1", "#videoInteligente2");
   formulario(
     ".contact-form",
     ".contact-form [data-form]",

@@ -1,7 +1,7 @@
 const d = document;
 
-export default function videoInteligente(videos, video2) {
-  const $videos = d.querySelectorAll(videos);
+export default function videoInteligente(video1, video2) {
+  const $videoInt1 = d.querySelector(video1);
 
   const cl = (entries) => {
     entries.forEach((entry) => {
@@ -11,7 +11,7 @@ export default function videoInteligente(videos, video2) {
         entry.target.pause();
       }
       window.addEventListener("visibilitychange", (el) => {
-        $videos.visibilityState === "visible"
+        $videoInt1.visibilityState === "visible"
           ? entry.target.play()
           : entry.target.pause();
       });
@@ -22,7 +22,7 @@ export default function videoInteligente(videos, video2) {
     threshold: 0.5,
   });
 
-  $videos.forEach((el) => obv.observe(el));
+  (() => obv.observe($videoInt1))();
 
   const $videoInt2 = d.querySelector(video2);
 
