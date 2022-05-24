@@ -18,6 +18,7 @@ import formulario from "./dom/formularioContacto.js";
 import searchFilter from "./dom/filtrodebusqueda.js";
 import atajosDelTeclado from "./dom/atajosDelTeclado.js";
 import { moveBall } from "./dom/moveBall.js";
+import { responsiveSlider } from "./dom/ResponsiveSlider.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   alarma(".alarma1", ".alarma2", "assets/sonido-de-sirena.mp3");
   cuentaAtras(".countDown");
   diseñoAdaptable("#video", "#map");
+  responsiveSlider(".mySlides", ".next", ".prev");
   responviseTester("#form-tester", "#url", "#width", "#height", ".cerrar");
   detectorDeDispositivos(".dispositivo");
   detectarConeccion(".connection");
