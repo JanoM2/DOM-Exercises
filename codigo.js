@@ -15,9 +15,9 @@ import scrollSpy from "./dom/scrollSpy.js";
 import voiceReader from "./dom/lectordevoz.js";
 import videoInteligente from "./dom/videoInteligente.js";
 import formulario from "./dom/formularioContacto.js";
-import canvas from "./dom/EventosYAtajosTeclado.js";
 import searchFilter from "./dom/filtrodebusqueda.js";
 import atajosDelTeclado from "./dom/atajosDelTeclado.js";
+import { moveBall } from "./dom/moveBall.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
   temas(".theme", "[data-dark]");
   reloj(".reloj1", ".reloj2", "#reloj");
   alarma(".alarma1", ".alarma2", "assets/sonido-de-sirena.mp3");
-  atajosDelTeclado();
   cuentaAtras(".countDown");
   diseñoAdaptable("#video", "#map");
   responviseTester("#form-tester", "#url", "#width", "#height", ".cerrar");
@@ -46,4 +45,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   searchFilter(".busqueda", ".figure");
 });
 
-canvas("escenario");
+document.addEventListener("keydown", (e) => {
+  moveBall(e, ".ball", ".stage");
+});
+
+atajosDelTeclado();
