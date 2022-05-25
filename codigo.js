@@ -20,7 +20,9 @@ import atajosDelTeclado from "./dom/atajosDelTeclado.js";
 import { moveBall } from "./dom/moveBall.js";
 import { responsiveSlider } from "./dom/ResponsiveSlider.js";
 
-document.addEventListener("DOMContentLoaded", (e) => {
+const d = document;
+
+d.addEventListener("DOMContentLoaded", (e) => {
   menu(".btnHamb", ".modal-window", ".modal-content a");
   flecha(".flecha");
   temas(".theme", "[data-dark]");
@@ -47,7 +49,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   searchFilter(".busqueda", ".figure");
 });
 
-document.addEventListener("keydown", (e) => {
+d.addEventListener("keydown", (e) => {
   moveBall(e, ".ball", ".stage");
 });
 

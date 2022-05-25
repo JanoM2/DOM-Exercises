@@ -193,6 +193,13 @@ audio {
   background-color: yellow;
 }
 
+@media screen and (max-width: 800px) {
+  #section2,
+  .modal-content a[href="#section2"] {
+    display: none;
+  }
+}
+
 /* COUNTDOWN STYLES */
 
 #section3 > h3 {
@@ -502,6 +509,13 @@ ol.lista {
   height: 300px;
   transition: 0.5s;
   box-shadow: 10px 10px 10px rgb(59, 59, 59);
+}
+
+@media screen and (max-width: 800px) {
+  #videoInteligente2,
+  p:last-of-type {
+    display: none;
+  }
 }
 
 /* Contact Form Styles */
