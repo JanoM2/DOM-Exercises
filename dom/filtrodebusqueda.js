@@ -7,7 +7,7 @@ export default function searchFilter(input, figure) {
     let $figure = d.querySelectorAll(figure);
 
     $figure.forEach((el) =>
-      el.textContent.includes(e.target.value.toLowerCase())
+      el.textContent.toLowerCase().includes(e.target.value.toLowerCase())
         ? el.classList.remove("hidden")
         : el.classList.add("hidden")
     );
