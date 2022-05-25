@@ -1,9 +1,9 @@
 const d = document;
 
 export function responsiveSlider(img, next, prev) {
-  let figure = document.querySelectorAll(img);
+  let figure = d.querySelectorAll(img);
   let i = 0;
-  document.addEventListener("click", (e) => {
+  d.addEventListener("click", (e) => {
     if (e.target.matches(next)) {
       e.preventDefault();
       figure[i].classList.remove("activado");
@@ -13,7 +13,7 @@ export function responsiveSlider(img, next, prev) {
     }
   });
 
-  document.addEventListener("click", (e) => {
+  d.addEventListener("click", (e) => {
     if (e.target.matches(prev)) {
       e.preventDefault();
       figure[i].classList.remove("activado");

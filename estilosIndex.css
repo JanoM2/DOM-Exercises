@@ -301,6 +301,10 @@ input {
 
 /* Search Filter Styles */
 
+.busqueda::-webkit-search-cancel-button {
+  display: none;
+}
+
 .imagenes {
   display: flex;
   flex-wrap: wrap;
@@ -445,7 +449,7 @@ ol.lista {
     top: 5rem;
     transform: translate(0, 0);
     opacity: 1;
-    height: 87vh;
+    height: 88vh;
   }
 
   .modal-content {
@@ -489,7 +493,6 @@ ol.lista {
 #videoInteligente1,
 #videoInteligente2 {
   display: block;
-  /* margin: 10px 10px 50px 10px; */
   width: 80%;
   height: 250px;
 }
