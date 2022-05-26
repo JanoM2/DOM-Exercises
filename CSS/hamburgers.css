@@ -1,6 +1,5 @@
 .hamburger {
   padding: 15px 15px;
-  display: block;
   position: fixed;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -32,7 +31,7 @@
 .hamburger-box {
   width: 40px;
   height: 24px;
-  display: inline-block;
+  display: block;
   position: relative;
 }
 

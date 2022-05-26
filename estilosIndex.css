@@ -306,6 +306,11 @@ input {
   font-size: 1.5rem;
 }
 
+#geolocalizacion b,
+#geolocalizacion p {
+  font-family: "Times New Roman", Times, serif;
+}
+
 /* Search Filter Styles */
 
 .busqueda::-webkit-search-cancel-button {
@@ -336,18 +341,18 @@ input {
 
 .figure img {
   border-radius: 20% 20% 10% 10%;
-  width: 200px;
+  width: 150px;
 }
 
 figcaption {
-  font-size: 2rem;
-  margin: 10px;
+  font-size: 1.5rem;
+  margin: 5px;
 }
 
 .figure.hidden {
   visibility: 0;
   opacity: 0;
-  transition: 0.7s;
+  transition: 0.5s;
   order: 1;
 }
 
@@ -479,7 +484,7 @@ ol.lista {
   }
   /*  */
   .hamburger {
-    display: none !important;
+    display: none;
   }
 
   .flecha {
@@ -513,7 +518,7 @@ ol.lista {
 
 @media screen and (max-width: 800px) {
   #videoInteligente2,
-  p:last-of-type {
+  #section12 > p:last-of-type {
     display: none;
   }
 }
@@ -643,5 +648,6 @@ footer {
 footer > a {
   background-color: yellow;
   color: black;
+  font-weight: bold;
   font-family: var(--letter-font);
 }
