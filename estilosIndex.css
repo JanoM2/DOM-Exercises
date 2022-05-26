@@ -39,6 +39,12 @@ img {
   z-index: 800;
 }
 
+@media screen and (max-width: 800px) {
+  #tituloindex {
+    font-size: 2rem;
+  }
+}
+
 h2 {
   font-family: var(--letter-font);
   font-weight: bold;
