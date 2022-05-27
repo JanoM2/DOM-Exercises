@@ -13,7 +13,7 @@ export default function detectorDeCamara(cam) {
       console.warn(err);
       let $section = d.querySelector("#section7");
       let $div = d.createElement("div");
-      $div.innerHTML = `<b>${err}</b>`;
+      $div.innerHTML = `<p>${err}</p>`;
       $section.appendChild($div);
     });
 }
