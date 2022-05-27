@@ -31,7 +31,14 @@ d.addEventListener("DOMContentLoaded", (e) => {
   cuentaAtras(".countDown");
   diseñoAdaptable("#video", "#map");
   responsiveSlider(".mySlides", ".next", ".prev");
-  responviseTester("#form-tester", "#url", "#width", "#height", ".cerrar");
+  responviseTester(
+    "#form-tester",
+    "#url",
+    "#width",
+    "#height",
+    ".probar",
+    ".cerrar"
+  );
   detectorDeDispositivos(".dispositivo");
   detectarConeccion(".connection");
   detectorDeCamara("#cam");

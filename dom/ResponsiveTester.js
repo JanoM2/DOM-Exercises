@@ -6,26 +6,28 @@ export default function responviseTester(
   url,
   width,
   height,
+  btnOpen,
   btnClose
 ) {
   let form = d.querySelector(formTester);
-  form.addEventListener("submit", () => {
-    let $url = form.querySelector(url),
-      $width = form.querySelector(width),
-      $height = form.querySelector(height);
+  d.addEventListener("click", (e) => {
+    if (e.target.matches(btnOpen)) {
+      let $url = form.querySelector(url),
+        $width = form.querySelector(width),
+        $height = form.querySelector(height);
 
-    let ventana;
-    ventana = w.open(
-      $url.value,
-      $url.value,
-      `innerWidth=${$width.value}, innerHeight=${$height.value}`
-    );
+      let ventana;
+      ventana = w.open(
+        $url.value,
+        $url.value,
+        `innerWidth=${$width.value}, innerHeight=${$height.value}`
+      );
 
-    d.addEventListener("click", (e) => {
-      if (e.target.matches(btnClose)) {
-        // e.preventDefault();
-        ventana.close();
-      }
-    });
+      d.addEventListener("click", (e) => {
+        if (e.target.matches(btnClose)) {
+          ventana.close();
+        }
+      });
+    }
   });
 }
