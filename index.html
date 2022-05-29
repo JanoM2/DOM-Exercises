@@ -212,7 +212,7 @@
 
             <p>* Este video se reproduce cuando tenes puesta la vista en él *</p>
             <video data-smart-video id="videoInteligente1" src="assets/rk.mp4" muted controls loop></video>
-            <p>* Este video se reproduce cuando detecta que tenes puesto el Mouse puesto sobre el Video *</p>
+            <p>* Este video se reproduce cuando detecta que tenes puesto el Mouse sobre el Video *</p>
             <video data-smart-video id="videoInteligente2" src="assets/rk.mp4" muted controls loop></video>
         </section>
 
