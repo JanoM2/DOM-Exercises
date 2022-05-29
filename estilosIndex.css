@@ -114,8 +114,8 @@ section {
 .flecha {
   display: block;
   position: fixed;
-  padding: 1px 20px;
-  font-size: 2.5rem;
+  padding: 5px 20px;
+  font-size: 2.3rem;
   background-color: yellow;
   border-radius: 100%;
   bottom: 1vh;
