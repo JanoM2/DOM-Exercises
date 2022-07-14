@@ -99,8 +99,9 @@ section {
   text-align: center;
   text-decoration: none;
   color: white;
-  font-size: 2em;
-  margin: 60px;
+  width: 100%;
+  font-size: 2rem;
+  margin: 20px 0px;
 }
 
 .modal-content a:hover {
@@ -465,7 +466,8 @@ ol.lista {
     top: 5rem;
     transform: translate(0, 0);
     opacity: 1;
-    height: 88vh;
+    z-index: 0;
+    height: 92vh;
   }
 
   .modal-content {
@@ -476,8 +478,8 @@ ol.lista {
   .modal-content a {
     font-size: 1rem;
     color: yellow;
-    margin: 0px;
-    padding: 10px;
+    padding: 0.75rem;
+    margin: 20px 0px;
   }
 
   .modal-content a:hover,
