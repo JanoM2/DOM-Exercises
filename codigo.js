@@ -28,7 +28,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   temas(".theme", "[data-dark]");
   reloj(".reloj1", ".reloj2", "#reloj");
   alarma(".alarma1", ".alarma2", "assets/sonido-de-sirena.mp3");
-  cuentaAtras(".countDown");
+  cuentaAtras(".countDown", 2023);
   diseñoAdaptable("#video", "#map");
   responsiveSlider(".mySlides", ".next", ".prev");
   responviseTester(
