@@ -1,7 +1,7 @@
 const d = document;
 
-export default function cuentaAtras(div) {
-  let fechaCuentaAtras = new Date("Jan 01, 2023 00:00:00").getTime();
+export default function cuentaAtras(div, año) {
+  let fechaCuentaAtras = new Date(`Jan 01, ${año} 00:00:00`).getTime();
 
   let intervalo = setInterval(() => {
     let ahora = new Date().getTime();
