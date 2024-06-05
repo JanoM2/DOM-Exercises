@@ -2,10 +2,10 @@
 Practicando manipular el DOM con ejercicios
 
 Technologies used:
-- I used Vanilla Javascript, Html, Css, localstorage
+- I used Vanilla Javascript, DOM, Html, Css and localstorage
 
 I learned things like:
-- Building dynamic user interfaces, managing state, handling client-side routing, making HTTP requests, writing JavaScript code, structuring and styling web pages, storing data locally in the browser, and integrating backend services.
+-  Manipulate web page behavior by interacting with the HTML structure through DOM manipulation, create and design web pages, and store data persistently in the browser
 
 📍 Link here: [DOM Exercises](https://ejercicios-dom.000webhostapp.com/)
 
