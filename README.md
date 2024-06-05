@@ -27,6 +27,8 @@ npm run build
 ### This usually run at http://localhost:8080/
 
 ### Preview  
+![image](https://github.com/JanoM2/DOM-Exercises/assets/78227130/813299cc-2609-4ef6-9e79-3387886d2a94)
+![image](https://github.com/JanoM2/DOM-Exercises/assets/78227130/76521e65-cba1-40f1-aa26-be99aa2e802c)
 ![image](https://github.com/JanoM2/DOM-Exercises/assets/78227130/ff40fc48-6ec8-43ef-9d13-81baf5f90a18)
 ![image](https://github.com/JanoM2/DOM-Exercises/assets/78227130/c7aac97e-d662-4941-a9f7-022b008809e3)
 ![image](https://github.com/JanoM2/DOM-Exercises/assets/78227130/bc916272-9cec-4c92-bdc7-df1a5786edce)
