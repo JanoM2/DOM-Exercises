@@ -7,7 +7,7 @@ Technologies used:
 I learned things like:
 -  Manipulate web page behavior by interacting with the HTML structure through DOM manipulation, create and design web pages, and store data persistently in the browser
 
-📍 Link here: [DOM Exercises](https://ejercicios-dom.000webhostapp.com/)
+📍 Link here: [DOM Exercises](https://dom-exercises.netlify.app/)
 
 ## Project setup
 ```
