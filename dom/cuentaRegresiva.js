@@ -2,7 +2,7 @@ const d = document;
 
 export default function cuentaAtras(div) {
   const año = new Date().getFullYear() + 1;
-  let fechaCuentaAtras = new Date(`Jan 01, ${año} 00:00:00`).getTime();
+  let fechaCuentaAtras = new Date(`Jan 01, ${Number(año)} 00:00:00`).getTime();
 
   let intervalo = setInterval(() => {
     let ahora = new Date().getTime();
